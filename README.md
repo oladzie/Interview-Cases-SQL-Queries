@@ -11,7 +11,8 @@ CASE II:
 
 <img width="683" alt="Screenshot 2023-12-12 201940" src="https://github.com/oladzie/Interview-Cases-SQL-Queries/assets/141512778/b28597b7-8527-4d2e-9f5e-e465a63253dc">
 
-<img width="730" alt="Screenshot 2023-12-12 201917" src="https://github.com/oladzie/Interview-Cases-SQL-Queries/assets/141512778/59a0d617-f857-49f8-a104-76dfd6e7e52e">
+<img width="716" alt="Screenshot 2023-12-12 210524" src="https://github.com/oladzie/Interview-Cases-SQL-Queries/assets/141512778/e7f2448e-eaf7-4756-977d-8337bcf24d26">
+
 
 CASE III:
 
@@ -19,4 +20,5 @@ CASE III:
 
 <img width="681" alt="Screenshot 2023-12-12 204225" src="https://github.com/oladzie/Interview-Cases-SQL-Queries/assets/141512778/3a23903c-6db6-4dbe-8924-474920c9445b">
 
-<img width="728" alt="Screenshot 2023-12-12 204132" src="https://github.com/oladzie/Interview-Cases-SQL-Queries/assets/141512778/0d9aa42a-d41f-4bfc-9d74-933720aa6435">
+<img width="716" alt="Screenshot 2023-12-12 210739" src="https://github.com/oladzie/Interview-Cases-SQL-Queries/assets/141512778/3abb19fb-a170-4c3f-a811-3860a1d02f7c">
+
