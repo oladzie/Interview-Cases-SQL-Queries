@@ -3,11 +3,11 @@
 #### Questions: 
 What information would you like to start off by pulling to get an overall understanding of the post feature?  What are the success rate by day? Which day of week has the lowest success rate?  
 #### Table: 
-Post_events
+* Post_events
 #### Columns: 
-user_id int
-created_at datetime
-event_name varchar (enter, post, cancel)
+* user_id int
+* created_at datetime
+* event_name varchar (enter, post, cancel)
 #### Answer: 
 Overal health: 
 * total numbers of posts(number of enters);
@@ -31,10 +31,38 @@ Overal health:
 <img width="728" alt="Screenshot 2023-12-12 201902" src="https://github.com/oladzie/Interview-Cases-SQL-Queries/assets/141512778/62adf303-dac6-46dd-a3cf-66ff11938e97">
 
 
-CASE II:
+## CASE II:
 
+#### Question: 
+Find the date with the highest total energy consumption from our data centers.
+Output the data along with the total energy consumption across all data centers.
+
+#### Table1: 
+* eu_energy
+##### Columns: 
+* date datetime
+* consumption int
+#### Table2: 
+* asia_energy
+##### Columns: 
+* date datetime
+* consumption int
+#### Table3: 
+*na_energy
+##### Columns:
+* date datetime
+* consumption int
+		
+#### Way of thinking:
+1. join tables by union all
+2.  group by date, total_consumption
+3. max
+4. filter max = maximum_consumption
+
+#### Queries:
 <img width="683" alt="Screenshot 2023-12-12 201940" src="https://github.com/oladzie/Interview-Cases-SQL-Queries/assets/141512778/b28597b7-8527-4d2e-9f5e-e465a63253dc">
 
+##### Result:
 <img width="716" alt="Screenshot 2023-12-12 210524" src="https://github.com/oladzie/Interview-Cases-SQL-Queries/assets/141512778/e7f2448e-eaf7-4756-977d-8337bcf24d26">
 
 
