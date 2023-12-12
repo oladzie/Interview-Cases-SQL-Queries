@@ -48,7 +48,7 @@ Output the data along with the total energy consumption across all data centers.
 * date datetime
 * consumption int
 #### Table3: 
-*na_energy
+* na_energy
 ##### Columns:
 * date datetime
 * consumption int
@@ -66,11 +66,29 @@ Output the data along with the total energy consumption across all data centers.
 <img width="716" alt="Screenshot 2023-12-12 210524" src="https://github.com/oladzie/Interview-Cases-SQL-Queries/assets/141512778/e7f2448e-eaf7-4756-977d-8337bcf24d26">
 
 
-CASE III:
+## CASE III:
+
+There are patient accounts that were open and closed by the date in the account status table.
+Compute the percentage of accounts that were closed on January 10th 2020.
+
+#### Table : 
+* account_status
+#### Columns: 
+* acc_id int
+* date datetime
+* status varchar (open, close)
+  
+##### Way of thinking:
+1. Filter by date 2020-01-10
+2. close_rate = closed_accounts / total_accounts * 100
+
+####Queries:
+'''
 
 <img width="677" alt="Screenshot 2023-12-12 204215" src="https://github.com/oladzie/Interview-Cases-SQL-Queries/assets/141512778/6926d61c-3c6a-4e6c-bfec-5aa7de7bbba8">
 
 <img width="681" alt="Screenshot 2023-12-12 204225" src="https://github.com/oladzie/Interview-Cases-SQL-Queries/assets/141512778/3a23903c-6db6-4dbe-8924-474920c9445b">
 
+#### Result:
 <img width="716" alt="Screenshot 2023-12-12 210739" src="https://github.com/oladzie/Interview-Cases-SQL-Queries/assets/141512778/3abb19fb-a170-4c3f-a811-3860a1d02f7c">
 
