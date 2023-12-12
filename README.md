@@ -1,20 +1,20 @@
 # Interview-Cases-SQL-Queries
-### CASE I:
-## Questions: 
+## CASE I:
+#### Questions: 
 What information would you like to start off by pulling to get an overall understanding of the post feature?  What are the success rate by day? Which day of week has the lowest success rate?  
-## Table: 
+#### Table: 
 Post_events
-## Columns: 
+#### Columns: 
 user_id int
 created_at datetime
 event_name varchar (enter, post, cancel)
-## Answer: 
+#### Answer: 
 Overal health: 
 * total numbers of posts(number of enters);
 * posts made by date;
 * success rate;
 * cancel rate.
-## Way of thinking:
+#### Way of thinking:
 1. Succes rate by date
 	date || success_rate = number of posts/ number of enter
 2. group by date
@@ -22,12 +22,12 @@ Overal health:
 4. average success_rate
 5. day || success_rate
 6. min success_rate   
-## Queries:
-
+#### Queries:
 <img width="674" alt="Screenshot 2023-12-12 201825" src="https://github.com/oladzie/Interview-Cases-SQL-Queries/assets/141512778/13603b62-b747-42f9-8c23-ed9db5eab26d">
 
 <img width="679" alt="Screenshot 2023-12-12 201837" src="https://github.com/oladzie/Interview-Cases-SQL-Queries/assets/141512778/27b932c3-f806-4701-8849-ad18871ed4cf">
 
+#### Result:
 <img width="728" alt="Screenshot 2023-12-12 201902" src="https://github.com/oladzie/Interview-Cases-SQL-Queries/assets/141512778/62adf303-dac6-46dd-a3cf-66ff11938e97">
 
 
