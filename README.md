@@ -131,8 +131,7 @@ For each date find the difference between the distance per dollar for that date 
 * monetary_cost float
 * driver_to_client_distance float
 
-Way of thinking I (with subqueries):
-
+#### Way of thinking I (with subqueries):
 1. date_request || difference
 2. each_day distance_per_dollar
 3. each month_year distance_per_dollar
@@ -143,9 +142,8 @@ Way of thinking I (with subqueries):
 #### Queries:
 <img width="636" alt="Screenshot 2023-12-13 104726" src="https://github.com/oladzie/Interview-Cases-SQL-Queries/assets/141512778/a86065f4-b5df-46ad-bc32-c14c78229da0">
 
-Way of thinking II (no subqueries):
-
-1.request_date
+#### Way of thinking II (no subqueries):
+1. request_date
 2. window function: distance_to_travel /  monetary_cost - AVG(distance_to_travel /  monetary_cost)
    partitioned over the month_year
 3. absolute value, round to 2 decimals
