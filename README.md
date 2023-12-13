@@ -36,7 +36,6 @@ Overal health:
 #### Question: 
 Find the date with the highest total energy consumption from our data centers.
 Output the data along with the total energy consumption across all data centers.
-
 #### Table1: 
 * eu_energy
 ##### Columns: 
@@ -52,13 +51,11 @@ Output the data along with the total energy consumption across all data centers.
 ##### Columns:
 * date datetime
 * consumption int
-		
 #### Way of thinking:
 1. join tables by union all
 2.  group by date, total_consumption
 3. max
 4. filter max = maximum_consumption
-
 #### Queries:
 <img width="683" alt="Screenshot 2023-12-12 201940" src="https://github.com/oladzie/Interview-Cases-SQL-Queries/assets/141512778/b28597b7-8527-4d2e-9f5e-e465a63253dc">
 
@@ -70,21 +67,17 @@ Output the data along with the total energy consumption across all data centers.
 
 There are patient accounts that were open and closed by the date in the account status table.
 Compute the percentage of accounts that were closed on January 10th 2020.
-
 #### Table : 
 * account_status
 #### Columns: 
 * acc_id int
 * date datetime
 * status varchar (open, close)
-  
-##### Way of thinking:
+ ##### Way of thinking:
 1. Filter by date 2020-01-10
 2. close_rate = closed_accounts / total_accounts * 100
-
-####Queries:
+#### Queries:
 '''
-
 <img width="677" alt="Screenshot 2023-12-12 204215" src="https://github.com/oladzie/Interview-Cases-SQL-Queries/assets/141512778/6926d61c-3c6a-4e6c-bfec-5aa7de7bbba8">
 
 <img width="681" alt="Screenshot 2023-12-12 204225" src="https://github.com/oladzie/Interview-Cases-SQL-Queries/assets/141512778/3a23903c-6db6-4dbe-8924-474920c9445b">
