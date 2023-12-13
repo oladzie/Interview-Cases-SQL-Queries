@@ -83,3 +83,75 @@ Compute the percentage of accounts that were closed on January 10th 2020.
 #### Result:
 <img width="716" alt="Screenshot 2023-12-12 210739" src="https://github.com/oladzie/Interview-Cases-SQL-Queries/assets/141512778/3abb19fb-a170-4c3f-a811-3860a1d02f7c">
 
+## CASE IV:
+#### Question:
+Find top 3 unique salaries of each department.
+Revert the results alphabetically by department and by highest to lowest salary.
+
+#### Table: 
+* twitter_employee
+#### Columns: 
+* id int
+* first_name varchar
+* last_name varchar
+* age int
+* sex varchar
+* employee_title varchar
+* deparment varchar
+* salary int
+* target int
+* bonus int
+* email varchar
+* city varchar
+* address varchar
+* manager_id int
+#### Way of thinking:
+1. Dense rank partition by daperttment and order by salary desc
+2. Rank_id <= 3
+3. Unique
+4. Order by department, salary desc
+   department || salary || rank_id 
+#### Queries:
+<img width="681" alt="Screenshot 2023-12-13 101221" src="https://github.com/oladzie/Interview-Cases-SQL-Queries/assets/141512778/68c6a5dc-92ce-482e-94c0-5138c97faaf8">
+
+#### Result:
+<img width="713" alt="Screenshot 2023-12-13 101242" src="https://github.com/oladzie/Interview-Cases-SQL-Queries/assets/141512778/22fa430c-88fa-4474-94d6-4bc80bad103b">
+
+## CASE V:
+
+#### Question: 
+For each date find the difference between the distance per dollar for that date and the average distance per dollar for that year/month.
+#### Table: 
+* uber_rides
+#### Columns: 
+* request_id int
+* request_date datetime
+* request_status varchar (canceled_by_driver, canceled_by_client, success)
+* distance_to_travel float
+* monetary_cost float
+* driver_to_client_distance float
+
+Way of thinking I (with subqueries):
+1. date_request || difference
+2. each_day distance_per_dollar
+3. each month_year distance_per_dollar
+4. join
+5. difference
+6. absolute value, round to 2 decimals
+7. order by request_date asc
+#### Queries:
+<img width="636" alt="Screenshot 2023-12-13 104726" src="https://github.com/oladzie/Interview-Cases-SQL-Queries/assets/141512778/a86065f4-b5df-46ad-bc32-c14c78229da0">
+
+Way of thinking II (no subqueries):
+1.request_date
+2. window function: distance_to_travel /  monetary_cost - AVG(distance_to_travel /  monetary_cost)
+   partitioned over the month_year
+3. absolute value, round to 2 decimals
+4. order by request_date asc
+#### Queries:
+<img width="638" alt="Screenshot 2023-12-13 104738" src="https://github.com/oladzie/Interview-Cases-SQL-Queries/assets/141512778/73b63ca3-88c4-483b-aa73-622cc31bf864">
+
+#### Result:
+<img width="655" alt="Screenshot 2023-12-13 104817" src="https://github.com/oladzie/Interview-Cases-SQL-Queries/assets/141512778/c2fb19e4-883a-42f6-8dcb-100de85eebed">
+
+
