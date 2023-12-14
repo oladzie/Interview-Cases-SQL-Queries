@@ -76,7 +76,6 @@ Compute the percentage of accounts that were closed on January 10th 2020.
 1. Filter by date 2020-01-10
 2. close_rate = closed_accounts / total_accounts * 100
 #### Queries:
-'''
 <img width="677" alt="Screenshot 2023-12-12 204215" src="https://github.com/oladzie/Interview-Cases-SQL-Queries/assets/141512778/6926d61c-3c6a-4e6c-bfec-5aa7de7bbba8">
 <img width="681" alt="Screenshot 2023-12-12 204225" src="https://github.com/oladzie/Interview-Cases-SQL-Queries/assets/141512778/3a23903c-6db6-4dbe-8924-474920c9445b">
 
